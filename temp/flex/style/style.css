@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* *** */
+
+.flex {
+  background-color: lightgrey;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.flex :where(div) {
+  aspect-ratio: 16/9;
+  width: 300px;
+  background-color: grey;
+  /* flex-grow: 1; */
+}

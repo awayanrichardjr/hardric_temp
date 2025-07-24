@@ -1,0 +1,12 @@
+.header {
+  width: fit-content;
+  height: calc(100vh - 50vh);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header :where(h1) {
+  color: white;
+}

@@ -1,0 +1,107 @@
+/* default style */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* *** */
+
+.grid {
+  background-color: lightgrey;
+  width: 100%;
+
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+    "box-1 box-1 box-1 box-1"
+    "box-3 box-3 box-2 box-4"
+    "box-3 box-3 box-5 box-5";
+}
+
+.grid :where(div) {
+  background-color: grey;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.grid :where(.div1) {
+  grid-area: box-1;
+}
+.grid :where(.div2) {
+  grid-area: box-2;
+}
+.grid :where(.div3) {
+  grid-area: box-3;
+}
+.grid :where(.div4) {
+  grid-area: box-4;
+}
+.grid :where(.div5) {
+  grid-area: box-5;
+}
+
+@media screen and (max-width: 890px) {
+  /* grid templates */
+  .grid {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+      "box-1 box-1 box-1"
+      "box-2 box-2 box-2"
+      "box-3 box-3 box-4"
+      "box-3 box-3 box-5";
+  }
+}
+@media screen and (max-width: 680px) {
+  .grid {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      "box-1 box-1"
+      "box-2 box-2"
+      "box-3 box-3"
+      "box-3 box-3"
+      "box-4 box-5";
+  }
+}
+@media screen and (max-width: 460px) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas:
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-3"
+      "box-4"
+      "box-5";
+  }
+}

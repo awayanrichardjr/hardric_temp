@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navigation">
+      <ul class="nav-brand">
+        <li><a href="#">HARDRIC</a></li>
+      </ul>
+      <ul class="nav-links">
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+      </ul>
+      <!-- nav menu -->
+      <ul class="nav-menu">
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined" onclick="nav_menu()"
+              >menu</span
+            >
+          </a>
+        </li>
+      </ul>
+      <!-- nav sidebar -->
+      <ul class="nav-sidebar" id="nav-sidebar">
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined" onclick="nav_sidebar()"
+              >close</span
+            >
+          </a>
+        </li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

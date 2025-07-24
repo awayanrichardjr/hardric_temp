@@ -1,0 +1,12 @@
+/* center a div */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* center a div */
+.container {
+  display: grid;
+  place-content: center;
+}
