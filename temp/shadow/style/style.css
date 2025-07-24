@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "poppins", sans-serif;
+  padding: 5rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* *** */
+
+.container {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  color: grey;
+  padding: 1rem;
+  aspect-ratio: 16/9;
+  width: 500px;
+
+  display: grid;
+  place-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+  color: black;
+  transform: scale(1.02);
+}
+
+.container:active {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1) inset,
+    -10px -10px 10px white inset;
+  color: lightgrey;
+  transition: unset;
+}
