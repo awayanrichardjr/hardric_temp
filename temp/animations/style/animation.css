@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "poppins", sans-serif;
+  padding: 1rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  aspect-ratio: 5/3;
+  width: 100px;
+  background-color: grey;
+  position: relative;
+
+  animation-name: slideRight;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* animation-composition: replace;
+  animation-range: normal;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  animation-timeline: auto; */
+  animation: slideRight 2s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0;
+    background-color: grey;
+  }
+  100% {
+    left: 100px;
+    background-color: lightblue;
+  }
+}
