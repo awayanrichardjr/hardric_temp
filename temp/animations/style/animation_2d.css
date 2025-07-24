@@ -7,16 +7,16 @@
 }
 
 body {
-  background-color: white;
+  background-color: whitesmoke;
   font-family: "poppins", sans-serif;
   padding: 1rem;
 
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  gap: 5rem;
 }
 
 html {
@@ -33,13 +33,18 @@ a {
 /* *** */
 
 div {
-  aspect-ratio: 5/3;
-  width: 100px;
-  background-color: grey;
+  height: 4rem;
+  width: 9rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  place-content: center;
 }
 
 .matrix {
-  animation: matrix 1s ease none infinite;
+  animation: matrix 3s ease none infinite;
 }
 
 @keyframes matrix {
@@ -47,11 +52,12 @@ div {
     transform: matrix(1, 0, 0, 1, 0, 0);
   }
   to {
-    transform: matrix(1, -1, 1, 1, 500, 100);
+    transform: matrix(1, -1, 1, 1, 50, 10);
   }
 }
+
 .matrix3d {
-  animation: matrix3d 1s ease none infinite;
+  animation: matrix3d 3s ease none infinite;
 }
 
 @keyframes matrix3d {
@@ -62,8 +68,9 @@ div {
     transform: matrix3d(1, 0, 0, 0.005, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
 }
+
 .perspective {
-  animation: perspective 1s ease none infinite;
+  animation: perspective 3s ease none infinite;
 }
 
 @keyframes perspective {
@@ -74,20 +81,27 @@ div {
     transform: perspective(17px);
   }
 }
+
 .rotate {
-  animation: rotate 1s ease none infinite;
+  animation: rotate 3s ease none infinite;
 }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(0turn);
   }
-  to {
-    transform: rotate(0.5turn);
+  50% {
+    transform: rotate(2turn);
+    background-color: red;
+    color: white;
+  }
+  100% {
+    transform: rotate(0turn);
   }
 }
+
 .rotate3d {
-  animation: rotate3d 1s ease none infinite;
+  animation: rotate3d 3s ease none infinite;
 }
 
 @keyframes rotate3d {
@@ -98,8 +112,9 @@ div {
     transform: rotate3d(-1, 1, -1, 180deg);
   }
 }
+
 .rotateX {
-  animation: rotateX 1s ease none infinite;
+  animation: rotateX 3s ease none infinite;
 }
 
 @keyframes rotateX {
@@ -110,8 +125,9 @@ div {
     transform: rotateX(90deg);
   }
 }
+
 .rotateY {
-  animation: rotateY 1s ease none infinite;
+  animation: rotateY 3s ease none infinite;
 }
 
 @keyframes rotateY {
@@ -122,8 +138,9 @@ div {
     transform: rotateY(90deg);
   }
 }
+
 .rotateZ {
-  animation: rotateZ 1s ease none infinite;
+  animation: rotateZ 3s ease none infinite;
 }
 
 @keyframes rotateZ {
@@ -134,8 +151,9 @@ div {
     transform: rotateZ(90deg);
   }
 }
+
 .translate {
-  animation: translate 1s ease none infinite;
+  animation: translate 3s ease none infinite;
 }
 
 @keyframes translate {
@@ -146,8 +164,9 @@ div {
     transform: translate(45px, 50%);
   }
 }
+
 .translate3d {
-  animation: translate3d 1s ease none infinite;
+  animation: translate3d 3s ease none infinite;
 }
 
 @keyframes translate3d {
@@ -158,20 +177,27 @@ div {
     transform: translate3d(12px, 50%, 3em);
   }
 }
+
 .translateX {
-  animation: translateX 1s ease none infinite;
+  animation: translateX 3s ease none infinite;
 }
 
 @keyframes translateX {
-  from {
+  0% {
     transform: translateX(0em);
   }
-  to {
-    transform: translateX(2em);
+  50% {
+    transform: translateX(10em);
+    background-color: blue;
+    color: white;
+  }
+  100% {
+    transform: translateX(0em);
   }
 }
+
 .translateY {
-  animation: translateY 1s ease none infinite;
+  animation: translateY 3s ease none infinite;
 }
 
 @keyframes translateY {
@@ -179,11 +205,12 @@ div {
     transform: translateY(0in);
   }
   to {
-    transform: translateY(3in);
+    transform: translateY(0.5in);
   }
 }
+
 .translateZ {
-  animation: translateZ 1s ease none infinite;
+  animation: translateZ 3s ease none infinite;
 }
 
 @keyframes translateZ {
@@ -194,68 +221,76 @@ div {
     transform: translateZ(2px);
   }
 }
+
 .scale {
-  animation: scale 1s ease none infinite;
+  animation: scale 3s ease none infinite;
 }
 
 @keyframes scale {
   from {
-    transform: scale(0, 0);
+    transform: scale(1, 1);
   }
   to {
-    transform: scale(2, 0.5);
+    transform: scale(1.5, 1.5);
   }
 }
+
 .scale3d {
-  animation: scale3d 1s ease none infinite;
+  animation: scale3d 3s ease none infinite;
 }
 
 @keyframes scale3d {
   from {
-    transform: scale3d(0, 0, 0);
+    transform: scale3d(1, 1, 1);
   }
   to {
-    transform: scale3d(2.5, 1.2, 0.3);
+    transform: scale3d(2.5, 0, 1.5);
   }
 }
+
 .scaleX {
-  animation: scaleX 1s ease none infinite;
+  animation: scaleX 3s ease none infinite;
 }
 
 @keyframes scaleX {
   from {
-    transform: scaleX(0);
+    transform: scaleX(1);
   }
   to {
-    transform: scaleX(2);
+    transform: scaleX(2.5);
   }
 }
+
 .scaleY {
-  animation: scaleY 1s ease none infinite;
+  animation: scaleY 3s ease none infinite;
 }
 
 @keyframes scaleY {
   from {
-    transform: scaleY(0);
+    transform: scaleY(1);
   }
   to {
-    transform: scaleY(0.5);
+    transform: scaleY(2);
+    background-color: green;
+    color: white;
   }
 }
+
 .scaleZ {
-  animation: scaleZ 1s ease none infinite;
+  animation: scaleZ 3s ease none infinite;
 }
 
 @keyframes scaleZ {
   from {
-    transform: scaleZ(0);
+    transform: scaleZ(1);
   }
   to {
-    transform: scaleZ(0.3);
+    transform: scaleZ(1.3);
   }
 }
+
 .skew {
-  animation: skew 1s ease none infinite;
+  animation: skew 3s ease none infinite;
 }
 
 @keyframes skew {
@@ -266,8 +301,9 @@ div {
     transform: skew(30deg, 20deg);
   }
 }
+
 .skewX {
-  animation: skewX 1s ease none infinite;
+  animation: skewX 3s ease none infinite;
 }
 
 @keyframes skewX {
@@ -275,11 +311,12 @@ div {
     transform: skewX(0deg);
   }
   to {
-    transform: skewX(30deg);
+    transform: skewX(50deg);
   }
 }
+
 .skewY {
-  animation: skewY 1s ease none infinite;
+  animation: skewY 3s ease none infinite;
 }
 
 @keyframes skewY {
@@ -287,6 +324,6 @@ div {
     transform: skewY(0rad);
   }
   to {
-    transform: skewY(1.07rad);
+    transform: skewY(0.5rad);
   }
 }
