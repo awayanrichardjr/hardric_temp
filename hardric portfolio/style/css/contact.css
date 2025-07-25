@@ -1,0 +1,49 @@
+.contact {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  /* padding-top: 10rem; */
+}
+
+.contact :where(.heading1) {
+  font-size: 70px;
+}
+
+.contact :where(.container) {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.contact :where(iframe) {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  aspect-ratio: 16/9;
+  width: 500px;
+}
+
+.contact :where(.details) {
+  height: 100%;
+}
+
+.contact :where(.details) li {
+  color: grey;
+
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-block: 0.2rem;
+}
+
+.contact :where(.details) .social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}

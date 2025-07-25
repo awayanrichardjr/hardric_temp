@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="style/css/nav.css" />
     <link rel="stylesheet" href="style/css/header.css" />
     <link rel="stylesheet" href="style/css/expertise.css" />
+    <link rel="stylesheet" href="style/css/project.css" />
+    <link rel="stylesheet" href="style/css/contact.css" />
 
     <script src="script/function/functions.js"></script>
     <script src="script/script.js"></script>
@@ -48,10 +50,10 @@
             <span class="material-symbols-outlined">close</span>
           </a>
         </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Expertise</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -66,9 +68,10 @@
     </header>
 
     <section class="expertise" id="expertise">
+      <h1 class="heading1">My Expertise</h1>
       <ul class="skills-list">
-        <li>
-          <h1>TITLE...</h1>
+        <li style="grid-area: box-1">
+          <h1>UI/UX Design</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             assumenda reiciendis similique accusantium ut, temporibus quae
@@ -76,8 +79,8 @@
             soluta obcaecati cum, quaerat earum.
           </p>
         </li>
-        <li>
-          <h1>TITLE...</h1>
+        <li style="grid-area: box-2">
+          <h1>Frontend Development</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             assumenda reiciendis similique accusantium ut, temporibus quae
@@ -85,8 +88,8 @@
             soluta obcaecati cum, quaerat earum.
           </p>
         </li>
-        <li>
-          <h1>TITLE...</h1>
+        <li style="grid-area: box-3">
+          <h1>Web Development</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             assumenda reiciendis similique accusantium ut, temporibus quae
@@ -94,8 +97,8 @@
             soluta obcaecati cum, quaerat earum.
           </p>
         </li>
-        <li>
-          <h1>TITLE...</h1>
+        <li style="grid-area: box-4">
+          <h1>Graphic Design</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             assumenda reiciendis similique accusantium ut, temporibus quae
@@ -104,6 +107,62 @@
           </p>
         </li>
       </ul>
+    </section>
+
+    <section class="project" id="project">
+      <h1 class="heading1">My Projects</h1>
+      <ul class="project-list">
+        <li style="grid-area: box-1">
+          <h1>Online Consultation</h1>
+          <p class="description">
+            TELEHEALTH ACCESS: An Online Consultation and Appointment with
+            Predictive Analytics
+          </p>
+        </li>
+        <li style="grid-area: box-2">
+          <h1>Title...</h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            deserunt voluptatum nihil, ipsam laborum, doloribus asperiores quam
+            pariatur aliquam iusto mollitia eveniet exercitationem iste? In quas
+            suscipit est maiores delectus.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <h1 class="heading1">Get in touch!</h1>
+      <div class="container">
+        <ul class="details">
+          <li>
+            <span class="material-symbols-outlined">location_on</span>
+            <p>Ilang, Davao City, 8000, Del Sur, Philippines</p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="#">awayabrichardjr.gamail.com</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">call</span>
+            <p>0906-587-6602</p>
+          </li>
+          <li class="social-links">
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+          </li>
+        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3958.4831486845214!2d125.64841257448441!3d7.185578815116644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTEnMDguMSJOIDEyNcKwMzknMDMuNiJF!5e0!3m2!1sen!2sph!4v1753429116251!5m2!1sen!2sph"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
   </body>
 </html>
