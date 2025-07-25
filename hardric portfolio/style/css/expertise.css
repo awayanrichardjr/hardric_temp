@@ -1,0 +1,24 @@
+.expertise {
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+}
+
+.expertise :where(.skills-list) {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 1rem;
+  text-align: justify;
+}
+.expertise :where(.skills-list) li {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--boxsh);
+  padding: 1rem;
+}
+
+@media screen and (max-wdith: 1070px) {
+}
