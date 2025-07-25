@@ -44,6 +44,10 @@
   width: 100%;
   color: grey;
   background-color: white;
+  cursor: pointer;
+}
+.navigation :where(.nav-sidebar) button:hover {
+  color: black;
 }
 
 .navigation :where(.nav-sidebar) span {
@@ -69,6 +73,10 @@
   width: 100%;
   color: grey;
   background-color: white;
+  cursor: pointer;
+}
+.navigation :where(.nav-menu) button:hover {
+  color: black;
 }
 
 .navigation :where(.nav-brand) a {
