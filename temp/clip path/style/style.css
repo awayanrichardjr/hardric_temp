@@ -1,0 +1,11 @@
+.clip-path {
+  height: 500px;
+  width: 350px;
+  background-color: grey;
+
+  clip-path: path(
+    "M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 140,0 A 10,10 0,0,1 150,10 L 150,190 A 10,10 0,0,1 140,200 L 10,200 A 10,10 0,0,1 0,190 L 0,50 A 10,10 0,0,1 10,40 Z"
+      /* M is sarting line, Z connects the last to the first, L is line, 10,40 is the coordinates */
+      /* A rx,ry x-axis-rotaion, large-arc-flag, sweep-flag */
+  );
+}
