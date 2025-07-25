@@ -12,6 +12,7 @@
 
 .contact :where(.heading1) {
   font-size: 70px;
+  text-align: center;
 }
 
 .contact :where(.container) {
@@ -43,7 +44,42 @@
 
 .contact :where(.details) .social-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .contact :where(.container) {
+    flex-direction: column-reverse;
+  }
+
+  .contact :where(.details) .social-links {
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact :where(.container) {
+    width: 100%;
+  }
+  .contact :where(iframe) {
+    width: inherit;
+    border-radius: unset;
+  }
+  .contact :where(.details) li {
+    padding-inline: 1rem;
+  }
+
+  .contact :where(.heading1) {
+    font-size: 50px;
+  }
+  .contact :where(.details) {
+    width: 100%;
+  }
+  .contact :where(.details) .social-links {
+    justify-content: center;
+    width: 100%;
+  }
 }

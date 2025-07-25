@@ -37,6 +37,14 @@
 .navigation :where(.nav-sidebar) a:hover {
   color: black;
 }
+.navigation :where(.nav-sidebar) button {
+  border: none;
+  display: flex;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: grey;
+  background-color: white;
+}
 
 .navigation :where(.nav-sidebar) span {
   width: 100%;
@@ -53,6 +61,14 @@
 }
 .navigation :where(.nav-menu) a:hover {
   color: black;
+}
+.navigation :where(.nav-menu) button {
+  border: none;
+  display: flex;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: grey;
+  background-color: white;
 }
 
 .navigation :where(.nav-brand) a {

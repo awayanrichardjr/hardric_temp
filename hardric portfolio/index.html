@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style/css/expertise.css" />
     <link rel="stylesheet" href="style/css/project.css" />
     <link rel="stylesheet" href="style/css/contact.css" />
+    <link rel="stylesheet" href="style/css/footer.css" />
 
     <script src="script/function/functions.js"></script>
     <script src="script/script.js"></script>
@@ -39,16 +40,16 @@
       </ul>
       <ul class="nav-menu">
         <li>
-          <a href="#" onclick="nav_menu()">
+          <button onclick="nav_menu()">
             <span class="material-symbols-outlined">menu</span>
-          </a>
+          </button>
         </li>
       </ul>
-      <ul class="nav-sidebar" id="nav-sidebar">
+      <ul class="nav-sidebar" id="nav-sidebar" onclick="nav_sidebar()">
         <li>
-          <a href="#" onclick="nav_sidebar()">
+          <button>
             <span class="material-symbols-outlined">close</span>
-          </a>
+          </button>
         </li>
         <li><a href="#home">Home</a></li>
         <li><a href="#expertise">Expertise</a></li>
@@ -142,7 +143,7 @@
           </li>
           <li>
             <span class="material-symbols-outlined">mail</span>
-            <a href="#">awayabrichardjr.gamail.com</a>
+            <a href="#">awayabrichardjr.gmail.com</a>
           </li>
           <li>
             <span class="material-symbols-outlined">call</span>
@@ -150,20 +151,20 @@
           </li>
           <li class="social-links">
             <a href="https://github.com/awayanrichardjr">
-              <img src="img/svg/github.svg" alt="github" style="width: 25px" />
+              <img src="img/svg/github.svg" alt="github" style="width: 21px" />
             </a>
             <a href="https://www.facebook.com/awayanrichardjr">
               <img
                 src="img/svg/facebook.svg"
                 alt="facebook"
-                style="width: 25px"
+                style="width: 21px"
               />
             </a>
             <a href="https://www.instagram.com/awayanrichardjr/">
               <img
                 src="img/svg/instagram.svg"
                 alt="instagram"
-                style="width: 25px"
+                style="width: 21px"
               />
             </a>
             <a
@@ -172,7 +173,7 @@
               <img
                 src="img/svg/linkedin.svg"
                 alt="linkedin"
-                style="width: 25px"
+                style="width: 21px"
               />
             </a>
           </li>
@@ -186,5 +187,10 @@
         ></iframe>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p>&copy Copyright 2025 by Hardric. All right reserved.</p>
+    </footer>
   </body>
 </html>

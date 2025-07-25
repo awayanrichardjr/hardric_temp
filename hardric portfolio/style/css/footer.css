@@ -1,0 +1,13 @@
+.footer {
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+.footer :where(p) {
+  color: grey;
+}
