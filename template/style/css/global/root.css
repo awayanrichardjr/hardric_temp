@@ -1,6 +1,5 @@
 :root {
-  --blue: rgb(0, 119, 255);
-  --blue-hover: rgb(47, 144, 255);
-  --red: rgb(255, 0, 140);
-  --red-hover: rgb(255, 51, 163);
+  --red: red;
+  --green: --green;
+  --blue: blue;
 }
