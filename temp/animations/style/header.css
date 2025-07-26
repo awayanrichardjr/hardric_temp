@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* *** */
+
+.header {
+  height: 100vh;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header :where(h1) {
+  font-size: 100px;
+
+  animation: h1 2s ease;
+}
+
+@keyframes h1 {
+  from {
+    opacity: 0%;
+    transform: translate(0, 30px);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
+}
+
+.header :where(p) {
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+
+  animation: ppp 2s ease;
+}
+
+@keyframes ppp {
+  from {
+    opacity: 0%;
+    transform: translate(0, 30px);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
+}
+.header :where(button) {
+  border: unset;
+  background-color: red;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  animation: btn 3s ease-in-out;
+}
+
+@keyframes btn {
+  from {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
+}

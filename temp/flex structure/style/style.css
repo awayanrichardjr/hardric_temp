@@ -1,0 +1,8 @@
+body {
+  display: flex;
+}
+
+.container {
+  /* property: f-grow f-shrink f-basis */
+  flex: 1 0 200px;
+}

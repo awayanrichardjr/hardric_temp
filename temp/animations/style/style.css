@@ -10,8 +10,6 @@ body {
   background-color: white;
   font-family: "poppins", sans-serif;
   padding: 1rem;
-
-  animation: bg 5s infinite ease;
 }
 
 html {
@@ -24,24 +22,4 @@ li {
 
 a {
   text-decoration: none;
-}
-
-/* *** */
-
-@keyframes bg {
-  0% {
-    background-color: blue;
-  }
-  25% {
-    background-color: red;
-  }
-  50% {
-    background-color: yellow;
-  }
-  75% {
-    background-color: green;
-  }
-  100% {
-    background-color: blue;
-  }
 }
