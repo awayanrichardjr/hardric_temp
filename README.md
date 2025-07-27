@@ -1,3 +1,3 @@
 # hardric_temp
 
-    Templates
+    Hardrid Templates
